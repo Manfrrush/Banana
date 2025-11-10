@@ -6,24 +6,26 @@
     box-sizing: border-box;
     font-family: "Parisienne", cursive;
     font-weight: 700;
-    font-style: normal; 
+    font-style: normal;
 
 }
-/* Botei cor de fundo; jogeui a caixa lá pro meio; no mais...    */
+
+/* Botei cor de fundo; joguei a caixa lá pro meio; no mais...    */
 body {
     background: #b02121;
     background: #2172b0;
     background: linear-gradient(90deg, rgba(33, 114, 176, 1) 28%, rgba(145, 91, 222, 1) 83%);
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    
-   
-     
+
+
+
 }
-    /* coloquei sombrinha; usei felx direction pra colocar em ouro formato; e o gap pra colocar espaçamento entre os numeros  */
-.calculadora{
+
+/* coloquei sombrinha; usei flex direction pra colocar em ouro formato; e o gap pra colocar espaçamento entre os numeros  */
+.calculadora {
     background-color: rgb(193, 224, 238);
     padding: 25px;
     border-radius: 20px;
@@ -33,63 +35,75 @@ body {
     flex-direction: column;
     gap: 20px;
 }
-#tela{
+
+#tela {
     width: 100%;
     height: 60px;
     font-size: 28px;
-    padding:10px ;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color:rgb(138, 163, 180) ;
-    color:#e6d3d3;
+    background-color: rgb(138, 163, 180);
+    color: #e6d3d3;
     text-align: right;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5) ;
-} /* Ajustando os numeros dentro da caixa maior, espçando, coloacando em colunas etc... */
-.botoes{
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustando os números dentro da caixa maior, espçando, coloacando em colunas etc... */
+.botoes {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.linha-botoes{
+
+.linha-botoes {
     display: flex;
     gap: 15px;
 }
-button{ /* Bom, deu errado, mas a ideia era levar o zero e o igual um do lado do otro com um espaçamento maior,juntamente da largura */
-    
+
+button {
+    /* Bom, deu errado, mas a ideia era levar o zero e o igual um do lado do outro com um espaçamento maior,juntamente da largura */
+
     padding: 20px;
     font-size: 20px;
     border: none;
     border-radius: 12px;
     background-color: #f5f2f7;
     color: #108bf0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0,0.6);
-    cursor: pointer;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.6);
+    cursor: pointer;
     transition: all 0.2s ease;
     flex: 1;
-} /* troquei a cor dos botões, e o botão sobe quando é escolhido */
-button:hover{
+}
+
+/* troquei a cor dos botões, e o botão sobe quando é escolhido */
+button:hover {
     background-color: rgb(197, 197, 197);
     transform: translateY(-5px);
-    
-} /* transforma o tamanho do botão dessa escala */
-button:active{
+
+}
+
+/* transforma o tamanho do botão dessa escala */
+button:active {
     transform: scale(0.97);
 
 }
-.operador{
+
+.operador {
     background-color: #f5eb5e;
     color: #f7f7f7;
 }
-.operador:hover{
+
+.operador:hover {
     background-color: #e0dfaa;
 }
-.botao-limpar{
+
+.botao-limpar {
     background-color: #417bf8;
     color: #000000;
-    
+
 }
-.botao-zero{
+
+.botao-zero {
     flex: 2;
 }
-
-

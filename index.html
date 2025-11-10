@@ -11,48 +11,50 @@
 <body>
     <!-- Isso aqui é o container principal da calculadora -->
     <div class="calculadora">
-        <!-- a telina do cal da ai já ó ;) -->
+        <!-- a telinha do cal ta ai já ó ;) -->
         <input type="text" id="tela">
-    
-    <!-- Area que contém todas as linhas de botões -->
-    <div class="botoes">
-        <!-- primeira linha de botões -->
-        <div class="linha-botoes">
-            <button class="botao-limpar">C</button>
-            <button class="operador">/</button>
-            <button class="operador">*</button>
-            <button class="del">Del</button>
 
-        </div>
-        <!-- Segunda linha de b -->
-        <div class="linha-botoes">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operador">-</button>
-        </div>
-        <!-- mais botão, que novidade :( -->
-        <div class="linha-botoes">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operador">+</button>
-        </div>
-        <!-- ces já sabem né -->
-        <div class="linha-botoes">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="botao-igual">=</button>
-        </div>
-        <div class="linha-botoes">
-            <button class="botao-zero">0</button>
-            <button>.</button>
+        <!-- Area que contém todas as linhas de botões -->
+        <div class="botoes">
+            <!-- primeira linha de botões -->
+            <div class="linha-botoes">
+                <button class="botao-limpar" onclick="limpar('')">C</button>
+                <button class="operador" onclick="add_value('/')">/</button>
+                <button class="operador" onclick="add_value('*')">*</button>
+                <button class="del" onclick="rebeca('')">Del</button>
+
+            </div>
+            <!-- Segunda linha de b -->
+            <div class="linha-botoes">
+                <button onclick="add_value('7')">7</button>
+                <button onclick="add_value('8')">8</button>
+                <button onclick="add_value('9')">9</button>
+                <button class="operador" onclick="add_value('-')">-</button>
+            </div>
+            <!-- mais botão, que novidade :( -->
+            <div class="linha-botoes">
+                <button onclick="add_value('4')">4</button>
+                <button onclick="add_value('5')">5</button>
+                <button onclick="add_value('6')">6</button>
+                <button class="operador" onclick="add_value('+')">+</button>
+            </div>
+            <!-- ces já sabem né -->
+            <div class="linha-botoes">
+                <button onclick="add_value('1')">1</button>
+                <button onclick="add_value('2')">2</button>
+                <button onclick="add_value('3')">3</button>
+                <button class="botao-igual" onclick="result('')">=</button>
+            </div>
+            <div class="linha-botoes">
+                <button class="botao-zero" onclick="add_value('0')">0</button>
+                <button onclick="add_value('.')">.</button>
+            </div>
         </div>
     </div>
-</div>
 
+    <script src="script.js">
 
+    </script>
 </body>
 
 </html>
